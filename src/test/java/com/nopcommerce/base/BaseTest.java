@@ -25,10 +25,10 @@ public class BaseTest extends BaseConfig {
     }
     @AfterMethod
     public void tearDown () {
-       // driver.quit();
+        driver.quit();
     }
-    /*@AfterTest()
+    @AfterTest()
     public void endReport() {
         extent.flush();
-    }*/
+    }
 }
