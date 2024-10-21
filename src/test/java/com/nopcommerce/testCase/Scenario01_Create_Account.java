@@ -21,7 +21,7 @@ public class Scenario01_Create_Account extends BaseTest {
         test = extent.createTest(methodName, "Your Test Case");
         test.log(Status.INFO, "starting");
         test.assignCategory("P0");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         register.createAccountButton().click();
         String currentURL = driver.getCurrentUrl();
@@ -39,7 +39,7 @@ public class Scenario01_Create_Account extends BaseTest {
     }
 
     @Test
-    public void TC02() throws InterruptedException {
+    public void TC02() {
 
         com.nopcommerece.pages.Scenario01_Create_Account register = new com.nopcommerece.pages.Scenario01_Create_Account(driver);
         SoftAssert softAssert = new SoftAssert();
@@ -48,7 +48,7 @@ public class Scenario01_Create_Account extends BaseTest {
         test = extent.createTest(methodName, "Your Test Case");
         test.log(Status.INFO, "starting");
         test.assignCategory("P0");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         register.createAccountButton().click();
 
@@ -77,7 +77,7 @@ public class Scenario01_Create_Account extends BaseTest {
         test = extent.createTest(methodName, "Your Test Case");
         test.log(Status.INFO, "starting");
         test.assignCategory("P0");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         register.createAccountButton().click();
 
