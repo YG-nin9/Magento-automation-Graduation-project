@@ -10,7 +10,7 @@ public class Scenario01_Create_Account {
     WebDriver driver;
     public static String userFirstname = "Dani";
     public static String userLastName = "Phantom";
-    public static String userValidEmail = "valid32_mail@gmail.com";
+    public static String userValidEmail = "test_mail@gmail.com";
     public static String userValidPassword = "Admin@123";
     public static String userInvalidPassword = "Admin@@123";
     public static String fullName = "Dani Phantom";
