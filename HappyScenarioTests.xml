@@ -15,7 +15,7 @@
                 </methods>
             </class>
 
-            <class name="com.nopcommerce.testCase.Scenario01_Create_Account">
+            <class name="CreateAccount.CreateAccount">
                 <methods>
                     <include name="TC03"/>
                 </methods>

@@ -1,20 +1,18 @@
-package com.nopcommerce.testCase;
+package CreateAccount;
 
 import com.aventstack.extentreports.Status;
 import com.nopcommerce.base.BaseTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java.util.concurrent.TimeUnit;
+import static Pages.CreateAccount.*;
 
-import static com.nopcommerece.pages.Scenario01_Create_Account.*;
-
-public class Scenario01_Create_Account extends BaseTest {
+public class CreateAccount extends BaseTest {
 
     @Test
     public void TC01() {
 
-        com.nopcommerece.pages.Scenario01_Create_Account register = new com.nopcommerece.pages.Scenario01_Create_Account(driver);
+        Pages.CreateAccount register = new Pages.CreateAccount(driver);
         SoftAssert softAssert = new SoftAssert();
 
         String methodName = new Exception().getStackTrace()[0].getMethodName();
@@ -41,7 +39,7 @@ public class Scenario01_Create_Account extends BaseTest {
     @Test
     public void TC02() {
 
-        com.nopcommerece.pages.Scenario01_Create_Account register = new com.nopcommerece.pages.Scenario01_Create_Account(driver);
+        Pages.CreateAccount register = new Pages.CreateAccount(driver);
         SoftAssert softAssert = new SoftAssert();
 
         String methodName = new Exception().getStackTrace()[0].getMethodName();
@@ -70,7 +68,7 @@ public class Scenario01_Create_Account extends BaseTest {
     @Test
     public void TC03() throws InterruptedException {
 
-        com.nopcommerece.pages.Scenario01_Create_Account register = new com.nopcommerece.pages.Scenario01_Create_Account(driver);
+        Pages.CreateAccount register = new Pages.CreateAccount(driver);
         SoftAssert softAssert = new SoftAssert();
 
         String methodName = new Exception().getStackTrace()[0].getMethodName();

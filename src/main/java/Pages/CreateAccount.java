@@ -1,21 +1,21 @@
-package com.nopcommerece.pages;
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class Scenario01_Create_Account {
+public class CreateAccount {
 
     WebDriver driver;
     public static String userFirstname = "Dani";
     public static String userLastName = "Phantom";
-    public static String userValidEmail = "test_mail@gmail.com";
+    public static String userValidEmail = "test_mai5l@gmail.com";
     public static String userValidPassword = "Admin@123";
     public static String userInvalidPassword = "Admin@@123";
     public static String fullName = "Dani Phantom";
 
-    public Scenario01_Create_Account(WebDriver driver) {
+    public CreateAccount(WebDriver driver) {
         this.driver = driver;
     }
 
