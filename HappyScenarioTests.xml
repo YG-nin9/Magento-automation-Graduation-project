@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="HappyScenario" preserve-order="true" parallel="none">
+    <test name="HappyScenario">
+        <classes>
+
+        <class name="SignIn.SignInTests">
+            <methods>
+                <include name="testValidSignIn"/>
+            </methods>
+        </class>
+            <class name="SignOut.SignOutTests">
+                <methods>
+                    <include name="testSignOut"/>
+                </methods>
+            </class>
+
+
+            <class name="Search.SearchTest">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class>
+            <class name="Search.SortByTests">
+                <methods>
+                    <include name="testSortByPrice_Ascending()"/>
+                    <include name="testSortByPrice_Descending()"/>
+                    <include name="testSortByName_Ascending()"/>
+                </methods>
+            </class>
+
+
+            <class name="Category.CategoriesTest">
+                <methods>
+                    <include name="testWhatNewCategory"/>
+                    <include name="testMenCategory"/>
+                    <include name="testWomenCategory"/>
+                    <include name="testGearCategory"/>
+                    <include name="testTrainingCategory"/>
+                    <include name="testSaleCategory"/>
+                    <include name="testSaleCategory"/>
+                    <include name="testSubCategories_MenTops"/>
+                    <include name="testSubCategories_MenBottoms"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
